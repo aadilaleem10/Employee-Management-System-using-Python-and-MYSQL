@@ -25,19 +25,19 @@ CREATE TABLE employee (
     name     VARCHAR(100)  NOT NULL,
     position VARCHAR(100)  NOT NULL,
     salary   DECIMAL(10,2) NOT NULL,
-    status   ENUM('Active', 'Inactive') NOT NULL DEFAULT 'Active'
+    status   VARCHAR(20) NOT NULL DEFAULT 'ACTIVE'
 );
 
 -- 4. Seed sample data (matches the example records used in the notebook demo)
-INSERT INTO employee (name, position, salary, status) VALUES
-('Aadil',   'Manager',           70000.00, 'Active'),
-('Afraz',   'Data Analyst',      40000.00, 'Inactive'),
-('Rayaan',  'Receptionist',      30000.00, 'Active'),
-('Kaushik', 'Electrician',       20000.00, 'Active'),
-('Afnan',   'Accountant',        50000.00, 'Active'),
-('Afzal',   'Employer',          60000.00, 'Active'),
-('Ray',     'Engineer',          20000.00, 'Active'),
-('Rahman',  'Python Programmer', 50000.00, 'Active');
+INSERT INTO employee (name, position, salary) VALUES
+('Aadil',   'Manager',           70000.00),
+('Afraz',   'Data Analyst',      40000.00),
+('Rayaan',  'Receptionist',      30000.00),
+('Kaushik', 'Electrician',       20000.00),
+('Afnan',   'Accountant',        50000.00),
+('Afzal',   'Employer',          60000.00),
+('Ray',     'Engineer',          20000.00),
+('Rahman',  'Python Programmer', 50000.00);
 
 -- 5. Verify
 SELECT * FROM employee ORDER BY id;
