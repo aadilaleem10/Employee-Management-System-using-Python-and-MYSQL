@@ -1,6 +1,6 @@
 # Employee Management System (Python + MySQL)
 
-A command-line Employee Management System built with **Python** and **MySQL**. It lets you add, edit, promote, activate/deactivate, and display employee records stored in a MySQL database.
+A Graphical Interface Employee Management System built with **Python** and **MySQL**. It lets you add, edit, promote, activate/deactivate, and display employee records stored in a MySQL database.
 
 ## Features
 
